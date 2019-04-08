@@ -1,7 +1,9 @@
 from django.urls import path
-from .views import  curd
+
+from .views import curd
+
 
 urlpatterns = [
-    path("surveys/",curd.SurveysApiView.as_view())
-
+    path("surveys/", curd.SurveysApiView.as_view())
 ]
+
